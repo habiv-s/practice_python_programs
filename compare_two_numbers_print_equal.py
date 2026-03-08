@@ -3,3 +3,5 @@ second_number = float(input("Enter the second number: "))
 
 if first_number == second_number:
     print("Equal")
+else:
+    print("Not Equal")
