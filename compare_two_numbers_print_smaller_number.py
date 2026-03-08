@@ -5,3 +5,5 @@ if first_number < second_number:
     print(f"The smaller number is {first_number}.")
 elif second_number < first_number:
     print(f"The smaller number is {second_number}.")
+else:
+    print("The numbers are the same and just equal.")
