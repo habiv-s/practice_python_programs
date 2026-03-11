@@ -5,5 +5,6 @@ while True:
         number = float(input("Enter number: "))
         numbers_list.append(number)
     except ValueError:
-        print(f"Invalid Input", numbers_list)
+        numbers_list.sort()
+        print(f"Invalid Input. Here's the lowest to highest number inputs: ", numbers_list)
         break
