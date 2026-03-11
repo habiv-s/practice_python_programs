@@ -5,5 +5,5 @@ while True:
         number = float(input("Enter number: "))
         numbers_list.append(number)
     except ValueError:
-        print("Invalid Input")
+        print(f"Invalid Input. The lowest number among all inputs is ", min(numbers_list))
         break
