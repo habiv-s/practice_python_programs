@@ -6,7 +6,7 @@ for i in range(10):
     numbers_list.append(number)
 
 for number in numbers_list:
-    if numbers_list.count(number) != 1:
+    if numbers_list.count(number) > 1 and number not in duplicate_numbers_list:
         duplicate_numbers_list.append(number)
 
 print(duplicate_numbers_list)
