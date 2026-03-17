@@ -5,6 +5,15 @@ while True:
         number = float(input("Enter number: "))
         numbers_list.append(number)
     except ValueError:
-        most_duplicate = max(numbers_list, key=numbers_list.count)
-        print(f"Invalid Input. The number with the most duplicates is {most_duplicate}")
+        if numbers_list:
+            max_count = max(numbers_list.count(numbers) for numbers in numbers_list)
+
+            most_duplicates = []
+            for numbers in numbers_list:
+                if numbers_list.count(numbers) == max_count and numbers not in most_duplicates:
+                    most_duplicates.append(numbers)
+
+            print(f"Invalid Input. Number(s) with the most duplicates: {most_duplicates}")
+        else:
+            print("Invalid Input. No valid numbers were entered.")
         break
