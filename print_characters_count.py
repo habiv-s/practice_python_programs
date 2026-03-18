@@ -1,2 +1,3 @@
 fullname = input("Enter your fullname: ")
-print(fullname)
+characters_count = len(fullname)
+print(characters_count)
