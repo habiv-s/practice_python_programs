@@ -1,3 +1,4 @@
 statement = input("Enter a complete statement: ")
 words = statement.split()
-print(words)
+word_count = len(words)
+print(word_count)
