@@ -6,4 +6,7 @@ for character in text:
         is_upper = False
         break
 
-print(is_upper)
+if is_upper:
+    print(f"{is_upper}. The string is all uppercase.")
+else:
+    print(f"{is_upper}. The string is NOT all uppercase.")
