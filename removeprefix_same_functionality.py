@@ -1,7 +1,7 @@
 text = input("Enter a string: ")
 prefix = input("Enter the prefix to remove: ")
 
-if text[:len(prefix)] == prefix:
+if len(text) >= len(prefix) and text[:len(prefix)] == prefix:
     print(text[len(prefix):])
 else:
     print(text)
