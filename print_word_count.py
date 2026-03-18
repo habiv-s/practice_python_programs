@@ -1,2 +1,3 @@
 statement = input("Enter a complete statement: ")
-print(statement)
+words = statement.split()
+print(words)
