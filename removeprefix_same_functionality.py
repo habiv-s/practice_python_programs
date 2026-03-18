@@ -3,3 +3,5 @@ prefix = input("Enter the prefix to remove: ")
 
 if text[:len(prefix)] == prefix:
     print(text[len(prefix):])
+else:
+    print(text)
