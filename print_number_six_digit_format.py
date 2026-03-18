@@ -1,2 +1,2 @@
 number = int(input("Enter a number (0-1000): "))
-print(number)
+print(f"{number:06d}")
