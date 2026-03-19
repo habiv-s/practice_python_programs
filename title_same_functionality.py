@@ -12,5 +12,5 @@ for character in text:
         else:
             result += character
         new_word = False
-        
-print(text)
+
+print(f"Result: {result}")
