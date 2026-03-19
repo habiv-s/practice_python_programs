@@ -12,5 +12,10 @@ for character in text:
         else:
             result += character
         new_word = False
+    else:
+        if 'A' <= character <= 'Z':
+            result += chr(ord(character) + 32)
+        else:
+            result += character
 
 print(f"Result: {result}")
