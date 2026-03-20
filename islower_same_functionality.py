@@ -6,4 +6,7 @@ for character in text:
         is_lower = False
         break
 
-print(is_lower)
+if is_lower:
+    print(f"{is_lower}. The string is all lowercase.")
+else:
+    print(f"{is_lower}. The string is NOT all lowercase.")
