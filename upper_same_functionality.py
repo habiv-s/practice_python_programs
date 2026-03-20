@@ -6,5 +6,5 @@ for character in text:
         uppercase_text += chr(ord(character) - 32)
     else:
         uppercase_text += character
-        
-print(text)
+
+print(uppercase_text)
